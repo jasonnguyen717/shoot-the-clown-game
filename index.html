@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="img/clownface.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Shoot The Clown</title>
+  </head>
+
+  <body>
+    <!-- game timer  -->
+    <div id="timer">
+        <div id="timeLeft">
+        </div>
+      </div>
+    <!-- header grid -->  
+    <div class="grid-container">
+      <!-- score (hits and misses) -->    
+      <div class="item">
+        <div class="score">Score: <span>0</span>
+          </div>
+        <div class="miss">Misses: <span id="miss-pts">0</span>
+          </div>
+      </div>
+
+      <!-- game title -->    
+      <div class="header">
+          <div class="title"><h1>Shoot The Clown</h1></div>
+          <div class="rules">Get at least 400 for score and less than 21 misses to win!</div>
+      </div>
+        
+      <!-- start game and stop game buttons -->
+      <div class="btn">
+        <button class="start-btn">START</button>
+        <button class="stop-btn">STOP</button>
+      </div>
+    </div>
+
+    <!-- crosshair image for mouse -->  
+    <img id="crosshair" src="img/crosshair.png" style="width: 100px; height: 100px" />
+    <!-- clown image to shoot -->
+    <img draggable="false" id="clownface" src="img/clownface.png" />
+    <!-- explosion image for winning the game -->
+    <img draggable="false" id="explosion" src="img/explosion.png" />
+
+    <script src="js/script.js"></script>
+      
+  </body>
+</html>
